@@ -1,0 +1,33 @@
+version: '3.4'
+networks:
+  backend:
+
+services:
+  consoledb:
+    container_name: console-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=admin@123
+    networks:
+      - backend
+    ports:
+      - 8000:1433  
+
+  consoleapp1:
+    container_name: console-app
+    image: ${DOCKER_REGISTRY-}consoleapp1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DB_HOST=consoledb
+      - DB_NAME=egrocer
+      - DB_USERID=sa 
+      - DB_SA_PASSWORD=admin@123
+    networks:
+      - backend
+    ports:
+      - 8001:80 
+    depends_on: 
+      - consoledb
