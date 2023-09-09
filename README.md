@@ -6,10 +6,10 @@ This is a Console Application with container orchestration support.
 2) Use Docker to containerize the Console App and run it in a container with the same network.
 
 # Few Docker Commands to Remember
-Docker ps - lists all the running container
-Docker ps -a - lists all the container ( including stopped ones )
-Docker images - lists all the available images
-Docker compose up -d - runs the docker-compose file and downloads all the images and kick starts the container in detached mode.
-Docker compose down - stops the container and removes the container from docker desktop.
-Docker rm <containername> or <id> - removes the container
-Docker rmi <imagename> or <id> - removes the image
+1) Docker ps - lists all the running container
+2) Docker ps -a - lists all the container ( including stopped ones )
+3) Docker images - lists all the available images
+4) Docker compose up -d - runs the docker-compose file and downloads all the images and kick starts the container in detached mode.
+5) Docker compose down - stops the container and removes the container from docker desktop.
+6) Docker rm <containername> or <id> - removes the container
+7) Docker rmi <imagename> or <id> - removes the image
