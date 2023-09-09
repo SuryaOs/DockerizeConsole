@@ -11,5 +11,5 @@ This is a Console Application with container orchestration support.
 3) Docker images - lists all the available images
 4) Docker compose up -d - runs the docker-compose file and downloads all the images and kick starts the container in detached mode.
 5) Docker compose down - stops the container and removes the container from docker desktop.
-6) Docker rm <containername> or <id> - removes the container
-7) Docker rmi <imagename> or <id> - removes the image
+6) Docker rm containername or id - removes the container
+7) Docker rmi imagename or id - removes the image
