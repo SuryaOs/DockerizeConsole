@@ -1,9 +1,9 @@
 # Dockerization
-This is a Console Application with container orchestration support.
+This is a Console Application with container orchestration support and retry mechanism.
 
 # Containerization
 1) Runs the SQL Server image in the container on the same network after downloading it from the Hub.
-2) Use Docker to containerize the Console App and run it in a container with the same network.
+2) Used Docker to containerize the Console App and run it in a container with the same network.
 
 # Few Docker Commands to Remember
 1) Docker ps - lists all the running container
