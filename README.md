@@ -13,3 +13,31 @@ This is a Console Application with container orchestration support and retry mec
 5) Docker compose down - stops the container and removes the container from docker desktop.
 6) Docker rm containername or id - removes the container
 7) Docker rmi imagename or id - removes the image
+
+# 231110 
+# Container Image 
+1) It is like read only harddisk ready to be installed on computer where OS is already installed.
+2) Similarly, container is computer with Harddisk installed. It can be powered on or off.
+
+# Container Image Software Term
+1) Package with all code, dependency, run time to create a container.
+2) Image is derived from multiple base images (runtime, codeapp etc.)
+
+# Container
+1) Containers are just like a ship container that holds/executes all the artifacts of an app.
+2) Container is an running instance of container image
+3) They are isolated and easy to ship/run anywhere ( Windows OS or Linux OS ) inside a Docker Host
+
+# Docker File
+1) A text file that contains instruction to build a docker image
+
+# Docker
+1) It is host for container. containers run on a host inside an OS or VM
+2) Docker can host multiple containers (app)
+
+# Docker Desktop
+1) To host container in dev environment we can use Docker Desktop that runs inside our Laptop ( Window OS )
+
+# Scale Up
+1) you can creae multiple containers from a docker image
+
